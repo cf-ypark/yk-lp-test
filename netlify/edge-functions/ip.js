@@ -1,5 +1,5 @@
 const ipReturn = async (request, context) => {
-    return new Response(`IP: ${request.socket.remoteAddress}`);
+    return new Response(`IP: ${context.ip}`);
 };
 
 export const config = {
