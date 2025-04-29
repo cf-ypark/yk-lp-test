@@ -1,5 +1,5 @@
 const ipReturn = async (request, context) => {
-    console.log(`IP: ${context.ip}`);
+    console.log(`IP: ${context.ip} / METHOD: ${request.method}`);
     return new Response(`IP: ${context.ip}`);
 };
 
